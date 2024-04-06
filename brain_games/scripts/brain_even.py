@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import prompt
 import random
 
@@ -12,9 +13,9 @@ def even_odd():
     hidden_number = random.randint(0, 1000)
     print(f'Answer "yes" if the number is even, otherwise answer "no".')
     print(f'Question: {hidden_number}')
-    answer = prompt.integer(prompt=None, empty=False)
+    answer = prompt.string(prompt=None, empty=False)
     print(f'Your answer: {answer}')
-    if answer % 2 == 0:
+    if hidden_number % 2 == 0 and answer == 'yes':
         print('Correct!')
     else:
         print(f"'yes' is wrong answer ;(. Correct answer was 'no'.")
