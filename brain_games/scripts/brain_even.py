@@ -56,4 +56,5 @@ def games_iter(true_answer=0):
     print('You win!')
 
 
+welcome()
 games_iter()
