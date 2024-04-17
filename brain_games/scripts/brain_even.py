@@ -55,6 +55,11 @@ def games_iter(true_answer=0):
             return
     print('You win!')
 
+
 def main():
     welcome()
     games_iter()
+
+
+if __name__ == '__main__':
+    main()
