@@ -21,3 +21,12 @@ def calc():
         user_answer = prompt.integer(prompt=None, empty=False)
         true_answer = first_number * second_number
         return user_answer, true_answer
+
+
+def game_func():
+    user_answer, true_answer = calc()
+    question = "What is the result of the expression?\nQuestion:"
+    return user_answer, true_answer, question
+
+
+
