@@ -11,7 +11,8 @@ def start_game_gcd(question):
     hidden_number = random.randint(0, 11)
     true_answer = cut_list[hidden_number]
     cut_list[hidden_number] = '..'
-    print(f"{question}{cut_list}")
+    refactored_list = ' '.join([str(elem) for elem in cut_list])
+    print(f"{question}{refactored_list}")
     user_answer = prompt.integer(prompt=None, empty=False)
     return user_answer, true_answer
 
