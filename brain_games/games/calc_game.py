@@ -2,6 +2,8 @@ import random
 import prompt
 
 question = "What is the result of the expression?\nQuestion:"
+
+
 def start_game_calc(question):
     rand_operation = random.randint(1, 3)
     first_number = random.randint(1, 100)
