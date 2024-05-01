@@ -1,4 +1,4 @@
-from brain__games.modules.game_modules import answer_check, welcome
+from brain_games.modules.game_modules import answer_check, welcome
 
 
 def engine(game_func, question):
@@ -9,6 +9,7 @@ def engine(game_func, question):
         user_answer, true_answer = game_func(question)
         if answer_check(user_answer, true_answer):
             score += 1
+            print(f'Your score {score} from 3')
         else:
             return
     print("You win!")
