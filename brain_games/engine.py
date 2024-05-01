@@ -1,4 +1,4 @@
-from bin.brain_games.modules.game_modules import answer_check, welcome
+from brain_games.modules.game_modules import answer_check, welcome
 
 
 def engine(game_func, question):
