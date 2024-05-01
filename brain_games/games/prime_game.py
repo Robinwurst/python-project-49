@@ -2,7 +2,8 @@ import random
 import numpy
 import prompt
 
-question = 'Answer "yes" if given number is prime. Otherwise answer "no".\nQuestion: '
+question = ('Answer "yes" if given number is prime. Otherwise answer "no".'
+            '\nQuestion: ')
 
 
 def get_primes(n):

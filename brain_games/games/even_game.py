@@ -1,7 +1,8 @@
 import random
 import prompt
 
-question = 'Answer "yes" if the number is even, otherwise answer "no".\nQuestion: '
+question = ('Answer "yes" if the number is even, otherwise answer "no".'
+            '\nQuestion: ')
 
 
 def start_game_even_odd(question):
