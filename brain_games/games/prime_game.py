@@ -1,5 +1,4 @@
 import random
-import numpy
 import prompt
 
 question = ('Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -7,11 +6,14 @@ question = ('Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def get_primes(n):
-    sieve = numpy.ones(n // 2, dtype=bool)
-    for i in range(3, int(n ** 0.5) + 1, 2):
-        if sieve[i // 2]:
-            sieve[i * i // 2::i] = False
-    return numpy.r_[2, 2 * numpy.nonzero(sieve)[0][1::] + 1]
+    sieve = [True] * n
+    primes = []
+    for p in range(2, n):
+        if sieve[p]:
+            primes.append(p)
+            for i in range(p * p, n, p):
+                sieve[i] = False
+    return primes
 
 
 def is_prime(primes_list, question_number):
