@@ -1,8 +1,8 @@
 import random
 import prompt
 
-
-def calc(question):
+question = "What is the result of the expression?\nQuestion:"
+def start_game_calc(question):
     rand_operation = random.randint(1, 3)
     first_number = random.randint(1, 100)
     second_number = random.randint(1, 100)
@@ -24,5 +24,5 @@ def calc(question):
 
 
 def game_func(question):
-    user_answer, true_answer = calc(question)
+    user_answer, true_answer = start_game_calc(question)
     return user_answer, true_answer

@@ -4,7 +4,7 @@ import prompt
 question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_odd(question):
+def start_game_even_odd(question):
     prompt.PROMPT = ''
     hidden_number = random.randint(0, 1000)
     print(question)
@@ -17,5 +17,5 @@ def even_odd(question):
 
 
 def game_func(question):
-    user_answer, true_answer = even_odd(question)
+    user_answer, true_answer = start_game_even_odd(question)
     return user_answer, true_answer
