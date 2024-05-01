@@ -2,7 +2,8 @@ from brain_games.modules.game_modules import answer_check, welcome
 
 
 def engine(game_func, question):
-    """Движок для игр. Принимает аргументы: true_answer, user_answer, question"""
+    """Движок для игр. Принимает аргументы:
+    true_answer, user_answer, question"""
     welcome()
     score = 0
     while score < 3:
