@@ -25,7 +25,7 @@ def welcome():
 def answer_check(user_answer, true_answer, user_name):
     if user_answer != true_answer:
         print(f'Your answer: {user_answer}')
-        print(f"{user_answer}' is wrong answer ;(. "
+        print(f"'{user_answer}' is wrong answer ;(. "
               f"Correct answer was '{true_answer}'.")
         print(f"Let's try again, {user_name}!")
         return False

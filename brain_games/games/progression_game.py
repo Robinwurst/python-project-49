@@ -7,8 +7,9 @@ question = "What number is missing in the progression?\nQuestion:"
 
 def start_game_gcd(question):
     base_list_of_numbers = list(range(0, 150, random.randint(1, 10)))
-    cut_list = base_list_of_numbers[:11]
-    hidden_number = random.randint(0, 11)
+    random_len = random.randint(6, 11)
+    cut_list = base_list_of_numbers[:random_len]
+    hidden_number = random.randint(0, random_len)
     true_answer = cut_list[hidden_number]
     cut_list[hidden_number] = '..'
     refactored_list = ' '.join([str(elem) for elem in cut_list])
