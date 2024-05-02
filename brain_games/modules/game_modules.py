@@ -20,7 +20,7 @@ def score_check(result_of_check_answer, true_answer=0):
         else:
             print("Try again!")
             return
-    print('You win!')
+    print(f'Congratulations, {user_name}!')
 
 
 def answer_check(user_answer, true_answer):
