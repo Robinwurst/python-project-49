@@ -8,8 +8,7 @@ question = ('Answer "yes" if the number is even, otherwise answer "no".'
 def start_game_even_odd(question):
     prompt.PROMPT = ''
     hidden_number = random.randint(0, 1000)
-    print(question)
-    print(hidden_number)
+    print(f'{question} {hidden_number}')
     user_answer = prompt.string(prompt=None, empty=False)
     if hidden_number % 2 == 0:
         return user_answer, "yes"
