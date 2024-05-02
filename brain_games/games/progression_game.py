@@ -5,6 +5,7 @@ import prompt
 question = "What number is missing in the progression?\nQuestion:"
 
 
+# noinspection PyTypeChecker
 def start_game_gcd(question):
     base_list_of_numbers = list(range(0, 150, random.randint(1, 10)))
     random_len = random.randint(6, 11)
