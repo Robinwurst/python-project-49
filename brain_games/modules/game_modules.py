@@ -1,7 +1,6 @@
 import prompt
 
 
-
 def welcome():
     prompt.PROMPT = ''
     print("Welcome to the Brain Games!\nMay I have your name?")
