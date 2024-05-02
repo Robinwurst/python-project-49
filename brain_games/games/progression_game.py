@@ -2,7 +2,7 @@
 import random
 import prompt
 
-question = "What number is missing in the progression?\nQuestion: "
+question = "What number is missing in the progression?\nQuestion:"
 
 
 def start_game_gcd(question):
@@ -12,7 +12,7 @@ def start_game_gcd(question):
     true_answer = cut_list[hidden_number]
     cut_list[hidden_number] = '..'
     refactored_list = ' '.join([str(elem) for elem in cut_list])
-    print(f"{question}{refactored_list}")
+    print(f"{question} {refactored_list}")
     user_answer = prompt.integer(prompt=None, empty=False)
     return user_answer, true_answer
 

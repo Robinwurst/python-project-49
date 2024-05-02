@@ -2,7 +2,7 @@ import math
 import random
 import prompt
 
-question = "Find the greatest common divisor of given numbers.\nQuestion: "
+question = "Find the greatest common divisor of given numbers.\nQuestion:"
 
 
 def start_game_gcd(question):

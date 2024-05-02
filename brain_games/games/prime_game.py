@@ -2,7 +2,7 @@ import random
 import prompt
 
 question = ('Answer "yes" if given number is prime. Otherwise answer "no".'
-            '\nQuestion: ')
+            '\nQuestion:')
 
 
 def get_primes(n):
@@ -29,7 +29,7 @@ def start_game_prime(question):
     question_number = random.randint(1, 200)
     primes_list = get_primes(200)
     true_answer = is_prime(primes_list, question_number)
-    print(f"{question}{question_number}")
+    print(f"{question} {question_number}")
     user_answer = prompt.string(prompt=None, empty=False)
     return user_answer, true_answer
 

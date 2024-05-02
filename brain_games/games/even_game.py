@@ -2,7 +2,7 @@ import random
 import prompt
 
 question = ('Answer "yes" if the number is even, otherwise answer "no".'
-            '\nQuestion: ')
+            '\nQuestion:')
 
 
 def start_game_even_odd(question):
