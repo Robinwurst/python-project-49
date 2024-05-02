@@ -14,12 +14,12 @@ def start_game_calc(question):
         true_answer = first_number + second_number
         return user_answer, true_answer
     elif rand_operation == 2:
-        print(f'{question}  {first_number} - {second_number}')
+        print(f'{question} {first_number} - {second_number}')
         user_answer = prompt.integer(prompt=None, empty=False)
         true_answer = first_number - second_number
         return user_answer, true_answer
     elif rand_operation == 3:
-        print(f'{question}  {first_number} * {second_number}')
+        print(f'{question} {first_number} * {second_number}')
         user_answer = prompt.integer(prompt=None, empty=False)
         true_answer = first_number * second_number
         return user_answer, true_answer
