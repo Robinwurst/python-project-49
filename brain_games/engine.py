@@ -23,15 +23,14 @@ def answer_check(user_answer, true_answer, user_name):
 
 
 def engine(game_func, question):
-    """Движок для игр. Принимает аргументы:
-    true_answer, user_answer, question"""
+    second_question = "\nQuestion:"
     user_name = welcome()
     score = 0
     while score < 3:
-        user_answer, true_answer = game_func(question)
-        if answer_check(user_answer, true_answer, user_name):
+        true_answer, task = game_func()
+        user_answer = input(f"{question}{second_question} {task}\n")
+        if answer_check(user_answer, str(true_answer), user_name):
             score += 1
-            # print(f'Your score {score} from 3')
         else:
             return
     print(f'Congratulations, {user_name}!')

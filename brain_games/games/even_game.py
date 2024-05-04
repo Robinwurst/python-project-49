@@ -1,21 +1,19 @@
 import random
-import prompt
 
-question = ('Answer "yes" if the number is even, otherwise answer "no".'
-            '\nQuestion:')
+question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def start_game_even_odd(question):
-    prompt.PROMPT = ''
+def start_game_even_odd():
     hidden_number = random.randint(0, 1000)
-    print(f'{question} {hidden_number}')
-    user_answer = prompt.string(prompt=None, empty=False)
+    task = hidden_number
     if hidden_number % 2 == 0:
-        return user_answer, "yes"
+        true_answer = "yes"
+        return true_answer, task
     elif hidden_number % 2 != 0:
-        return user_answer, "no"
+        true_answer = "no"
+        return true_answer, task
 
 
-def game_func(question):
-    user_answer, true_answer = start_game_even_odd(question)
-    return user_answer, true_answer
+def game_func():
+    true_answer, task = start_game_even_odd()
+    return true_answer, task

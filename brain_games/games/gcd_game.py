@@ -1,19 +1,17 @@
 import math
 import random
-import prompt
 
-question = "Find the greatest common divisor of given numbers.\nQuestion:"
+question = "Find the greatest common divisor of given numbers."
 
 
-def start_game_gcd(question):
+def start_game_gcd():
     first_number = random.randint(1, 100)
     second_number = random.randint(1, 100)
     true_answer = math.gcd(first_number, second_number)
-    print(f"{question} {first_number} {second_number}")
-    user_answer = prompt.integer(prompt=None, empty=False)
-    return user_answer, true_answer
+    task = f"{first_number} {second_number}"
+    return true_answer, task
 
 
-def game_func(question):
-    user_answer, true_answer = start_game_gcd(question)
-    return user_answer, true_answer
+def game_func():
+    true_answer, task = start_game_gcd()
+    return true_answer, task
