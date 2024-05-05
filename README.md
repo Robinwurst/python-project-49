@@ -23,10 +23,10 @@
 - ОЗУ 48 Гбайт  
 - LPDDR5-6400, Dual-Channel, onboard
 ### Инструкция по установке (актуально для Mac OS, скорее всего и для любых других ОС)
-#### 1. Устанавливаем poetry-проект из GitHub github.com [Инструкция по установке](https://ru.hexlet.io/courses/python-setup-environment/lessons/poetry-and-packaging/theory_unit)
+#### 1. Устанавливаем poetry-проект из github.com [Инструкция по установке](https://ru.hexlet.io/courses/python-setup-environment/lessons/poetry-and-packaging/theory_unit)
 > $ pip install git+https://github.com/<username>/<project-name>  
 
-*Однако стоит иметь в виду, что pip относительно недавно научился понимать pyproject.toml. 
+> *Однако стоит иметь в виду, что pip относительно недавно научился понимать pyproject.toml. 
 Поэтому советую периодически обновлять pip с помощью команды _$ pip install --user --upgrade pip_*
 
 #### 2. Запускаем игры в терминале
