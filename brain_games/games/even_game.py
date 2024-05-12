@@ -1,19 +1,14 @@
 import random
 
-question = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def start_game_even_odd():
+def is_even(number):
+    return "yes" if number % 2 == 0 else "no"
+
+
+def gen_raund_data():
     hidden_number = random.randint(0, 1000)
     task = hidden_number
-    if hidden_number % 2 == 0:
-        true_answer = "yes"
-        return true_answer, task
-    elif hidden_number % 2 != 0:
-        true_answer = "no"
-        return true_answer, task
-
-
-def game_func():
-    true_answer, task = start_game_even_odd()
+    true_answer = is_even(hidden_number)
     return true_answer, task

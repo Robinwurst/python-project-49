@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 from brain_games.engine import engine
-from brain_games.games.even_game import game_func, question
+from brain_games.games.even_game import (gen_raund_data,
+                                         QUESTION)
 
 
 def main():
-    engine(game_func, question)
+    engine(gen_raund_data, QUESTION)
 
 
 if __name__ == '__main__':
