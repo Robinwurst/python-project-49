@@ -23,13 +23,12 @@
 - ОЗУ 48 Гбайт  
 - LPDDR5-6400, Dual-Channel, onboard
 ### Инструкция по установке (актуально для Mac OS, скорее всего и для любых других ОС)
-[![asciicast](https://asciinema.org/a/ErMH13f2vfeovlUueK5DxDOW0.svg)](https://asciinema.org/a/ErMH13f2vfeovlUueK5DxDOW0)
+[![asciicast](https://asciinema.org/a/HIJYCvugyLkdcAkQwCGJrwMWv.svg)](https://asciinema.org/a/HIJYCvugyLkdcAkQwCGJrwMWv)
 #### 1. Клонируем репозиторий
 > $ git clone https://github.com/Robinwurst/python-project-49.git
-#### 2. Устанавливаем poetry
-[Инструкция по установке](https://python-poetry.org/docs/)
-#### 3. Настраиваем и инициализируем виртуальное окружение  
-> $ poetry config virtualenvs.in-project true  
+#### 2. [Устанавливаем poetry](https://python-poetry.org/docs/)
+
+#### 3. Устанавливаем зависимости, указанные в pyproject.toml
 > $ poetry install
 
 #### 4. Запускаем игры в терминале
