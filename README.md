@@ -23,13 +23,16 @@
 - ОЗУ 48 Гбайт  
 - LPDDR5-6400, Dual-Channel, onboard
 ### Инструкция по установке (актуально для Mac OS, скорее всего и для любых других ОС)
-#### 1. Устанавливаем poetry-проект из github.com [Инструкция по установке](https://ru.hexlet.io/courses/python-setup-environment/lessons/poetry-and-packaging/theory_unit)
-> $ pip install git+  
+[![asciicast](https://asciinema.org/a/ErMH13f2vfeovlUueK5DxDOW0.svg)](https://asciinema.org/a/ErMH13f2vfeovlUueK5DxDOW0)
+#### 1. Клонируем репозиторий
+> $ git clone https://github.com/Robinwurst/python-project-49.git
+#### 2. Устанавливаем poetry
+[Инструкция по установке](https://python-poetry.org/docs/)
+#### 3. Настраиваем и инициализируем виртуальное окружение  
+> $ poetry config virtualenvs.in-project true  
+> $ poetry install
 
-> *Однако стоит иметь в виду, что pip относительно недавно научился понимать pyproject.toml. 
-Поэтому советую периодически обновлять pip с помощью команды _$ pip install --user --upgrade pip_*
-
-#### 2. Запускаем игры в терминале
+#### 4. Запускаем игры в терминале
 
 ##### Перечень игр:
 #### - Калькулятор. Арифметические выражения, которые необходимо вычислить
