@@ -3,7 +3,7 @@ prompt.PROMPT = ''
 MAX_GAME_SCORE = 3
 
 
-def engine(raund_data, question):
+def run_game(raund_data, question):
     print("Welcome to the Brain Games!\nMay I have your name?")
     user_name = prompt.string(prompt=None, empty=False)
     print(f'Hello, {user_name}!')
