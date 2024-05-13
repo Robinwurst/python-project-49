@@ -4,6 +4,7 @@ QUESTION = "What is the result of the expression?"
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 30
 
+
 def calculate(rand_operation, first_number, second_number):
     if rand_operation == "+":
         return first_number + second_number

@@ -5,6 +5,7 @@ QUESTION = "Find the greatest common divisor of given numbers."
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 30
 
+
 def search_gcd(first_number, second_number):
     true_answer = math.gcd(first_number, second_number)
     return true_answer

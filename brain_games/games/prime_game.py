@@ -5,6 +5,7 @@ LIMIT_NUMBERS = 200
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 200
 
+
 def is_prime(number, limit_of_numbers):
     sieve = [True] * limit_of_numbers
     primes = []

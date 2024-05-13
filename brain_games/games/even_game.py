@@ -4,6 +4,7 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 1000
 
+
 def is_even(number):
     return number % 2 == 0
 
