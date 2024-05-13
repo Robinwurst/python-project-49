@@ -1,9 +1,11 @@
 import random
 
 QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+LIMIT_NUMBERS = 200
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 200
 
-
-def get_primes(limit_of_numbers):
+def is_prime(number, limit_of_numbers):
     sieve = [True] * limit_of_numbers
     primes = []
     for p in range(2, limit_of_numbers):
@@ -11,16 +13,11 @@ def get_primes(limit_of_numbers):
             primes.append(p)
             for i in range(p * p, limit_of_numbers, p):
                 sieve[i] = False
-    return primes
-
-
-def is_prime(primes_list, number):
-    return "yes" if number in primes_list else "no"
+    return number in primes
 
 
 def gen_raund_data():
-    random_number = random.randint(1, 200)
-    primes_list = get_primes(200)
-    true_answer = is_prime(primes_list, random_number)
+    random_number = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    true_answer = "yes" if is_prime(random_number, LIMIT_NUMBERS) else "no"
     task = f"{random_number}"
     return true_answer, task

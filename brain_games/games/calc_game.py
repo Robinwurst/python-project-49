@@ -1,27 +1,23 @@
 import random
 
 QUESTION = "What is the result of the expression?"
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 30
 
-
-def calc_expression(rand_operation, first_number, second_number):
-    if rand_operation == 1:
-        task = f"{first_number} + {second_number}"
-        true_answer = first_number + second_number
-        return true_answer, task
-    elif rand_operation == 2:
-        task = f'{first_number} - {second_number}'
-        true_answer = first_number - second_number
-        return true_answer, task
-    elif rand_operation == 3:
-        task = f'{first_number} * {second_number}'
-        true_answer = first_number * second_number
-        return true_answer, task
+def calculate(rand_operation, first_number, second_number):
+    if rand_operation == "+":
+        return first_number + second_number
+    elif rand_operation == "-":
+        return first_number - second_number
+    elif rand_operation == "*":
+        return first_number * second_number
 
 
 def gen_raund_data():
-    rand_operation = random.randint(1, 3)
-    first_number = random.randint(1, 100)
-    second_number = random.randint(1, 100)
-    true_answer, task = calc_expression(rand_operation,
-                                        first_number, second_number)
+    first_number = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    second_number = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    operators = ("-", "+", "*")
+    rand_operation = random.choice(operators)
+    task = f'{first_number} {rand_operation} {second_number}'
+    true_answer = calculate(rand_operation, first_number, second_number)
     return true_answer, task
